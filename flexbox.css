@@ -1,0 +1,96 @@
+
+/* MENU */
+.header{
+    display: flex;
+    justify-content:space-between;
+}
+
+.logo-menu, .header-list{
+    display: flex;
+    /* justify-content: space-around; */
+    gap: 40px;
+    align-items: center;
+}
+
+.nav-header-list{
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* PRESENTATION */
+.img-presentation{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+
+/* ABOUT ME */
+.img-aboutme{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* SKILLS */
+.img-skill{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.skill-list, .skill-list2{
+    display: flex;
+    justify-content: space-around;
+}
+
+.skill-list h4, .skill-list2 h4{
+    display: flex;
+    justify-content: center;
+}
+
+
+/* WORK */
+.img-work{
+    display: flex;
+    justify-content: space-around;
+}
+
+.work-list{
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    gap: 10px;
+}
+
+.work-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.work-list h4{
+    display: flex;
+    justify-content: center;
+}
+
+.work-item .link, .work-item .link2{ 
+    display: flex;
+    justify-content: center;
+}
+
+
+/* CONTACT */
+.img-contact{
+    display: flex;
+    justify-content: space-around;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+.socials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

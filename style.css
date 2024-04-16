@@ -1,0 +1,576 @@
+/* FONTS */
+@font-face {
+    font-family: 'Mosk Ultra-Bold 900';
+    src: 
+    url(Fonts/MoskBold/MoskUltra-Bold900.woff2) format("woff2"),
+    url(Fonts/MoskBold/MoskUltra-Bold900.woff) format("woff")
+    url(Fonts/MoskBold/MoskUltra-Bold900.ttf) format("truetype");
+    font-display: swap;   
+}
+
+@font-face {
+    font-family: 'Mosk Bold 700';
+    src: 
+    url(Fonts/MoskBold/MoskBold700.woff2) format("woff2"),
+    url(Fonts/MoskBold/MoskBold700.woff) format("woff")
+    url(Fonts/MoskBold/MoskBold700.ttf) format("truetype");
+    font-display: swap;   
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+::selection{
+    background: rgb(107, 23, 230);
+    color: white;
+}
+
+/* MENU  */
+header{
+    background: linear-gradient(to right,
+    #f6f4f6 0%,
+    rgba(246, 244, 246) 32%,
+    #6fdcbf 32%,
+    hsl(164, 61%, 65%) 100%);
+    height: 100vh;
+}
+
+.header{
+    margin: 0px 200px 50px 100px;
+    font-family: "Mosk Bold 700";
+    font-size: 17.725px;
+    line-height: 22px;
+    color: rgb(64, 64, 64);
+}
+
+.logo-menu, .header-list{
+    margin-top: 50px;
+    width: 500px;
+}
+
+.resume{
+    display: inline-block;
+    font-family: "Mosk Bold 700";
+    font-size: 17.725px;
+    color: rgb(64, 64, 64);
+    text-decoration: none; 
+    border-style: solid;
+    border-width: 2px 6px 6px 2px;
+    border-radius: 10px;
+    padding: 5px;
+    transition: transform .2s cubic-bezier(.34,1.56,.64,1);   
+}
+
+.resume:hover{
+    border-width: 2px 2px 2px 2px;
+    transform: translate(4px, 4px);
+}
+
+.logo-menu a, .navlist{
+    display: inline-block;
+    color:rgb(64, 64, 64);
+    text-decoration: none;
+    transition: all cubic-bezier(0.1, 0, 0, 1) 1.5s;
+}
+
+.logo-menu a:hover, .navlist:hover{
+    text-decoration: dashed underline;
+    text-underline-offset: 10px;
+    color: rgb(107, 23, 230);
+    transform: translateY(-8px);
+}
+
+#logo{
+    width: 150px;
+}
+
+
+/* PRESENTATION */
+.img1{
+    position: relative;
+    top: 100px;
+}
+
+.presentation{
+    font-family: "Mosk Ultra-Bold 900";
+    font-size: 68px;
+    font-weight: 700;
+    line-height: 69.5px;
+    color: rgb(64, 64, 64);
+}
+
+.presentation h1{
+    position: relative;
+    top: 100px;
+}
+
+.presentation a{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color: rgb(64, 64, 64);
+    -webkit-text-stroke-width: 1.5px;
+}
+
+.presentation a:hover span{ 
+    -webkit-text-fill-color: red;
+    -webkit-text-stroke-color: rgb(64, 64, 64);
+    -webkit-text-stroke-width: 1.5px;
+}
+
+.presentation a:hover{ 
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-color: rgb(64, 64, 64);
+    -webkit-text-stroke-width: 1.5px;
+}
+
+.presentation h1 a::selection{
+    background: rgb(107, 23, 230);
+    -webkit-text-stroke-color: #6fdcbf;
+    -webkit-text-stroke-width: 1.5px;
+}
+
+
+/* ABOUT ME */
+.aboutme{
+    height: 100vh;
+    background-color: rgb(254, 248, 180);   
+}
+
+.aboutme h2{
+    font-family: "Mosk Ultra-Bold 900";
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 69.5px;
+    color: rgb(64, 64, 64);
+    padding: 80px;    
+}
+
+.img-aboutme p{
+    font-family: "Segoe UI";
+    color: rgb(64, 64, 64);
+    font-size: 20px;
+    line-height: 32px;
+    width: 40%;
+    border-style: solid;
+    border-right-width: 2px;
+    border-color: rgb(64, 64, 64);
+    padding-right: 100px;
+}
+
+.aboutme a{
+    display: inline-block;
+    font-family: "Mosk Ultra-Bold 900";
+    font-size: 28px;
+    font-weight: 700;
+    color: rgb(64, 64, 64);
+    text-decoration: none; 
+    border-style: solid;
+    border-width: 2px 6px 6px 2px;
+    border-radius: 10px;
+    position: relative;
+    left: 250px;
+    padding: 10px;
+    transition: transform .2s cubic-bezier(.34,1.56,.64,1);
+}
+
+.aboutme a:hover{
+    border-width: 2px 2px 2px 2px;
+    transform: translate(4px, 4px);
+}
+
+/* SKILLS */
+.skills{
+    height: 100vh;
+    background-color: #aadcec;   
+}
+
+.img3{
+    width: 592px;
+    height: 450px;
+}
+
+.skills h2{
+    font-family: "Mosk Ultra-Bold 900";
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 69.5px;
+    color: rgb(64, 64, 64);
+    padding: 80px; 
+}
+
+.skill-container{
+    border-style: solid;
+    border-left-width: 2px;
+    border-color: rgb(64, 64, 64);
+    padding-left: 100px;
+}
+
+.titulo-skill{
+    font-family: "Mosk Ultra-Bold 900";
+    font-size: 34px; 
+    font-weight: 700;
+    line-height: 34px;
+    color: rgb(64, 64, 64);
+    margin: 0px 0px 50px 0px;
+}
+
+.titulo-skill2 h3{
+    font-family: "Mosk Ultra-Bold 900";
+    font-size: 34px; 
+    font-weight: 700;
+    line-height: 34px;
+    color: rgb(64, 64, 64);
+}
+
+.titulo-skill2 h4{
+    font-family: "Mosk Ultra-Bold 900";
+    font-size: 29px; 
+    font-weight: 700;
+    line-height: 34px;
+    color: rgb(64, 64, 64);
+}
+
+.titulo-skill h3, .titulo-skill2 h3, .titulo-skill2 h4{
+    margin: 0px 0px 20px 0px;
+}
+
+
+.skill-list img, .skill-list2 img{
+    width: 100px;
+}
+
+.skill-item h4, .skill-item2 h4{
+    font-family: "Mosk Bold 700";
+    font-size: 17.725px;
+    line-height: 22px;
+    color: rgb(64, 64, 64);   
+}
+
+
+/* WORK */
+.work{
+    height: 100vh;
+    background-color: #f5f4fc;   
+}
+
+.titulo-work{
+    width: 40%;
+}
+
+.img4{
+    width: 592px;
+    height: 450px;
+}
+
+.titulo-work h3{
+    font-family: "Mosk Ultra-Bold 900";
+    font-size: 34px; 
+    font-weight: 700;
+    line-height: 34px;
+    color: rgb(64, 64, 64);
+    margin-bottom: 40px;
+}
+
+.work h2{
+    font-family: "Mosk Ultra-Bold 900";
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 69.5px;
+    color: rgb(64, 64, 64);
+    padding: 80px; 
+}
+
+.work-list img{
+    width: 150px;
+    padding: 20px 105px 20px 105px;
+    background-color: rgba(245, 244, 252, 0.62);
+}
+
+.work-link{
+    text-decoration: none;
+}
+
+.work-item h4, .work-item .link, .work-item .link2{
+    padding: 20px;
+    font-family: "Mosk Bold 700";
+    font-size: 20px;
+    line-height: 22px;
+    color: rgb(64, 64, 64); 
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.work-item .link{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: "Mosk Bold 700";
+    font-size: 20px;
+    line-height: 22px;
+    color: rgb(107, 23, 230);   
+}
+
+.link2:hover{
+    color: rgb(107, 23, 230);  
+    text-decoration: dashed underline;
+    text-underline-offset: 10px;
+}
+
+.work-item{
+    width: 360px;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.work-item:hover{
+    transform: translateY(-8px);
+    box-shadow: 15px 8px 6px -6px rgba(235, 234, 242, 0.58);
+}
+
+.work .see{
+    display: inline-block;
+    font-family: "Mosk Ultra-Bold 900";
+    font-size: 28px;
+    font-weight: 700;
+    color: rgb(64, 64, 64);
+    text-decoration: none; 
+    border-style: solid;
+    border-width: 2px 6px 6px 2px;
+    border-radius: 10px;
+    position: relative;
+    left: 250px;
+    top: 100px;
+    padding: 10px;
+    transition: transform .2s cubic-bezier(.34,1.56,.64,1);
+}
+
+.work .see:hover{
+    border-width: 2px 2px 2px 2px;
+    transform: translate(4px, 4px);
+}
+
+
+/* CONTACT */  
+.contact{
+    height: 100vh;
+    background-color: #caf2f3;   
+}
+
+.contact h2{
+    font-family: "Mosk Ultra-Bold 900";
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 69.5px;
+    color: rgb(64, 64, 64);
+    padding: 80px 80px 20px 80px; 
+}
+
+.img5{
+    width: 592px;
+    height: 500px;
+}
+
+.titulo-contact{
+    width: 30%;
+}
+
+.titulo-contact h3{
+    font-family: "Mosk Ultra-Bold 900";
+    font-size: 34px; 
+    font-weight: 700;
+    line-height: 34px;
+    color: rgb(64, 64, 64);
+    margin-bottom: 40px;
+}   
+
+.titulo-contact p{
+    font-family: "Mosk Bold 700";
+    font-size: 17.725px;
+    line-height: 22px;
+    color: rgb(64, 64, 64); 
+    margin-bottom: 40px;
+}
+
+.full-input{
+    display: inline-block;
+    padding: 0px 10px 0px 10px; 
+    border: 2px solid blue;
+    background-color: white;
+    margin-bottom: 20px;
+    font-family: "Mosk Bold 700";
+    font-size: 17.725px;
+    line-height: 22px;
+    color: rgb(64, 64, 64);
+    cursor: text;
+    height: 75px;
+}
+
+.full-input:focus-within{
+    border: 2px solid #6fdcbf;
+}
+
+.form label:focus-within{
+    color: green;
+    padding-top: 0px;
+    font-size: 16px;
+    ::placeholder{
+        color: rgba(64, 64, 64, 0.5);
+    }
+}
+
+.main_input{
+    position: relative;
+    width: 100%;
+    outline: none;
+    border: none;
+    display: inline-block;
+    line-height: 1.2em;
+    font-size: 20px;
+    font-family: "Mosk Bold 700";
+    padding-bottom: 26px;     
+    background-color: transparent;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    
+  border: 1px solid transparent;
+  -webkit-text-fill-color: rgb(64, 64, 64);
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+::placeholder{
+    color: transparent;
+}
+
+.form label{
+    padding-top: 25px; 
+    width: 100%;
+    display: inline-block;
+    color: blue;
+    font-family: "Mosk Bold 700";
+    cursor: text;
+    user-select: none;
+    font-size: 20px;
+    position: relative;
+    transition: .2s cubic-bezier(.34,1.56,.64,1);
+}
+
+.full-input2{
+    display: inline-block;
+    padding: 0px 10px 0px 10px;
+    border: 2px solid blue;
+    background-color: white;
+    margin-bottom: 20px;
+    font-family: "Mosk Bold 700";
+    font-size: 17.725px;
+    line-height: 22px;
+    color: rgb(64, 64, 64);
+    cursor: text;
+    height: 210px;
+}
+
+.full-input2:focus-within{
+    border: 2px solid #6fdcbf;
+}
+
+.textarea{
+    resize: none;
+    outline: none;
+    border: none;
+    display: inline-block;
+    font-size: 20px;
+    width: 100%;
+    height: 150px;
+    font-family: "Mosk Bold 700";
+}
+
+.submit{
+    width: 120px;
+    font-family: "Mosk Ultra-Bold 900";
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(64, 64, 64);
+    text-decoration: none; 
+    border-style: solid;
+    border-width: 2px 6px 6px 2px;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform .2s cubic-bezier(.34,1.56,.64,1);
+}
+
+.submit:hover{
+    border-width: 2px 2px 2px 2px;
+    transform: translate(4px, 4px);
+}
+
+.socials h3{
+    margin-top: 165px;
+    font-family: "Mosk Bold 700";
+    font-size: 17.725px;
+    line-height: 22px;
+    color: rgb(64, 64, 64); 
+    margin-bottom: 40px;
+}
+
+.social-item{
+    transition: all cubic-bezier(0.1, 0, 0, 1) .5s; 
+}
+
+.social-item img{
+    width: 100px;
+    margin: 10px;
+}
+
+.social-item:hover{
+    transform: translateY(-8px);
+}
+
+
+/* FOOTER */ 
+footer{
+    background-color: rgb(0, 70, 128);
+    text-align: center;
+    color: white;
+    font-family: "Mosk Bold 700";
+    font-size: 17.725px;
+    line-height: 22px;
+    padding: 10px 0px 10px 0px;
+}
+
+.logo-footer{
+    width: 100px;
+    transition: 0.5s;
+}
+
+.logo-footer:hover{
+    transform: scale(1.2);
+}
+
+.Copyright{
+    cursor:default ;
+}
+
+.Copyright:hover{
+    color: gold;
+}
+
+.aboutme:hover h2,
+.skills:hover h2,
+.work:hover h2,
+.contact:hover h2{
+    color: rgb(107, 23, 230);  
+    text-decoration: dashed underline;
+    text-underline-offset: 10px;
+    transform: translateY(-8px);
+    transition: transform .3s cubic-bezier(.34,1.56,.64,1);
+}
