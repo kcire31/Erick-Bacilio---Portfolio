@@ -26,6 +26,19 @@ html{
     color: white;
 }
 
+::-webkit-scrollbar{
+    width: 11px;
+}
+
+::-webkit-scrollbar-track{
+    background: rgba(128, 128, 128, 0.199);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #6fdcbf;
+    border-radius: 6px;
+}
+
 /* MENU  */
 header{
     background: linear-gradient(to right,
