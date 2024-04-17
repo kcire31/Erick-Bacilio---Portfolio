@@ -5,23 +5,30 @@
     justify-content:space-between;
 }
 
-.logo-menu, .header-list{
+.logo-menu{
     display: flex;
     /* justify-content: space-around; */
     gap: 40px;
     align-items: center;
 }
 
+.header-list{
+    display: flex;
+    /* justify-content: space-around; */ /*es este*/
+    gap: 40px; /*quitar este*/
+    align-items: center;
+}
+
 .nav-header-list{
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-end; /*quitar esto en el*/
 }
 
 /* PRESENTATION */
 .img-presentation{
     display: flex;
     justify-content: space-evenly;
-    width: 100%;
+    width: 100%;  /*poner 100vh*/
 }
 
 
@@ -93,4 +100,91 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+
+@media screen and (max-width:1030px){
+    /* MENU */
+    .header{
+        display: block;
+    }
+
+    .logo-menu{
+        justify-content: space-around;
+    }
+
+    .nav-header-list{
+        /* justify-content: flex-start; */
+        justify-content: center;
+    }
+
+    .header-list{
+        justify-content: space-around;
+        gap: 15px;
+    }
+
+    /* PRESENTATION */
+    .img-presentation{
+        display: block;
+        /* width: 100vh; */
+    }  
+
+    .container-img1{
+        display: flex;
+        justify-content: center;
+    }
+
+    /* ABOUT ME */
+    .img-aboutme{
+        flex-direction: column-reverse;
+    }
+
+    .container-img2{
+        display: flex;
+        justify-content: center;
+    }
+
+    /* SKILLS */
+    .img-skill{
+        flex-direction: column;
+    }
+
+    .container-img3{
+        display: flex;
+        justify-content: center;
+    }
+
+    .skill-list{
+        flex-wrap: wrap;
+    }
+
+    /* WORK */
+    .img-work{
+        flex-direction: column-reverse;
+    }
+
+    .container-img4{
+        display: flex;
+        justify-content: center;
+    }
+
+    .work-list{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .work .see{
+        display: flex;
+        justify-content: center;
+    } 
+
+    /* CONTACT */  
+    .img-contact{
+        flex-direction: column;
+    }
+
+    .container-img5{
+        display: flex;
+        justify-content: center;
+    }
 }

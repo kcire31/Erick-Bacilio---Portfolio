@@ -103,6 +103,7 @@ header{
 .img1{
     position: relative;
     top: 100px;
+    height: fit-content;
 }
 
 .presentation{
@@ -170,6 +171,10 @@ header{
     padding-right: 100px;
 }
 
+.img2{
+    height: fit-content;
+}
+
 .aboutme a{
     display: inline-block;
     font-family: "Mosk Ultra-Bold 900";
@@ -198,8 +203,8 @@ header{
 }
 
 .img3{
-    width: 592px;
-    height: 450px;
+    height: fit-content;
+    /* width: 592px;*/
 }
 
 .skills h2{
@@ -266,13 +271,22 @@ header{
     background-color: #f5f4fc;   
 }
 
+.work h2{
+    font-family: "Mosk Ultra-Bold 900";
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 69.5px;
+    color: rgb(64, 64, 64);
+    padding: 80px; 
+}
+
 .titulo-work{
     width: 40%;
 }
 
 .img4{
-    width: 592px;
-    height: 450px;
+    /* width: 592px; */
+    height: fit-content;
 }
 
 .titulo-work h3{
@@ -282,15 +296,6 @@ header{
     line-height: 34px;
     color: rgb(64, 64, 64);
     margin-bottom: 40px;
-}
-
-.work h2{
-    font-family: "Mosk Ultra-Bold 900";
-    font-size: 58px;
-    font-weight: 700;
-    line-height: 69.5px;
-    color: rgb(64, 64, 64);
-    padding: 80px; 
 }
 
 .work-list img{
@@ -379,8 +384,7 @@ header{
 }
 
 .img5{
-    width: 592px;
-    height: 500px;
+    height: fit-content;
 }
 
 .titulo-contact{
@@ -586,4 +590,192 @@ footer{
     text-underline-offset: 10px;
     transform: translateY(-8px);
     transition: transform .3s cubic-bezier(.34,1.56,.64,1);
+}
+
+@media screen and (max-width:1030px){
+
+    /* MENU */
+    header{
+        height: auto;
+        padding-bottom: calc(7.5rem + (10 - 7.5) * ((100vw - 20rem)/ (100 - 20)));
+    }
+
+    header{
+        background: #f6f4f6;
+    }
+
+    .header{
+        margin: 0px 0px 50px 0px;
+    }
+
+    .logo-menu{
+        margin-top: 0px;
+        height: 50px;
+        width: auto;
+        padding-top: 20px;
+    }
+
+    .header-list{
+        margin-top: 0px;
+        height: 50px;
+        padding-top: 17px;
+    }
+
+    .nav-header-list{
+        /* padding-left: 10px; */
+        position: fixed;
+        z-index: 1;
+        bottom: 0px;
+        background: #f6f4f6;
+        border-top: solid 2px #404040;
+        width: 100%; /*100% poner */
+    }
+
+    /* PRESENTATION */
+    .img1{
+        position: initial;
+        width: 70%;
+    }
+
+    .presentation{
+        font-size: 40px;
+        line-height: 47px;
+    }
+
+    .presentation h1{
+        text-align: center;
+        top: 0px;
+        padding-top: 35px;
+        padding-left: calc(1rem + (8 - 1) * ((100vw - 20rem)/ (100 - 20)));
+        padding-right: calc(1rem + (8 - 1) * ((100vw - 20rem)/ (100 - 20)));
+    }
+
+    /* ABOUT ME */
+    .aboutme{
+        height: auto;
+        padding-bottom: calc(7.5rem + (10 - 7.5) * ((100vw - 20rem)/ (100 - 20)));
+        padding-left: calc(1rem + (8 - 1) * ((100vw - 20rem)/ (100 - 20)));
+        padding-right: calc(1rem + (8 - 1) * ((100vw - 20rem)/ (100 - 20))); 
+    }
+
+    .aboutme h2{
+        font-size: 40px;
+        line-height: 47px;
+        padding: 68px;
+    }
+
+    .img2{
+        position: initial;
+        width: 80%;
+    }
+
+    .img-aboutme p{
+        border: none;
+        width: auto;
+        padding-top: 20px;
+        padding-right: 0%;
+    }
+
+    .aboutme a{
+        position: initial;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    /* SKILLS */
+    .skills{
+        height: auto;
+        padding-bottom: calc(7.5rem + (10 - 7.5) * ((100vw - 20rem)/ (100 - 20)));
+        padding-left: calc(1rem + (8 - 1) * ((100vw - 20rem)/ (100 - 20)));
+        padding-right: calc(1rem + (8 - 1) * ((100vw - 20rem)/ (100 - 20))); 
+    }
+
+    .skills h2{
+        font-size: 40px;
+        line-height: 47px;
+        padding: 74px;
+        text-align: center;
+    }
+
+    .img3{
+        position: initial;
+        width: 80%;
+    }
+
+    .skill-container{
+        border: none;
+        padding: 0px;
+    }
+
+    .titulo-skill h3{
+        padding: 20px 0px 20px 0px;
+        text-align: center;
+    }
+
+    /* WORK */
+    .work{
+        height: auto;
+        padding-bottom: calc(7.5rem + (10 - 7.5) * ((100vw - 20rem)/ (100 - 20)));
+        padding-left: calc(1rem + (8 - 1) * ((100vw - 20rem)/ (100 - 20)));
+        padding-right: calc(1rem + (8 - 1) * ((100vw - 20rem)/ (100 - 20))); 
+    }
+
+    .work h2{
+        font-size: 40px;
+        line-height: 47px;
+        padding: 74px;
+        text-align: center;
+    }
+
+    .img4{
+        position: initial;
+        width: 80%;
+    }
+   
+    .titulo-work{
+        width: auto;
+    }
+
+    .titulo-work h3{
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .work .see{
+        position: initial;
+    } 
+
+    /* CONTACT */  
+    .contact{
+        height: auto;
+        padding-bottom: calc(7.5rem + (10 - 7.5) * ((100vw - 20rem)/ (100 - 20)));
+        padding-left: calc(1rem + (8 - 1) * ((100vw - 20rem)/ (100 - 20)));
+        padding-right: calc(1rem + (8 - 1) * ((100vw - 20rem)/ (100 - 20))); 
+    }
+
+    .contact h2{
+        font-size: 40px;
+        line-height: 47px;
+        padding: 74px;
+        text-align: center;
+    }
+
+    .img5{
+        position: initial;
+        width: 80%;
+    }
+
+    .titulo-contact{
+        width: auto;
+        padding-top: 20px;
+    }
+
+    .socials h3{
+        margin-top: 65px;
+    }
+
+    /* FOOTER */ 
+    footer{
+        padding-bottom: 75px;
+    }
 }
