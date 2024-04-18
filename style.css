@@ -103,7 +103,7 @@ header{
 .img1{
     position: relative;
     top: 100px;
-    height: fit-content;
+    /* height: fit-content; */
 }
 
 .presentation{
@@ -170,10 +170,10 @@ header{
     border-color: rgb(64, 64, 64);
     padding-right: 100px;
 }
-
+/* 
 .img2{
     height: fit-content;
-}
+} */
 
 .aboutme a{
     display: inline-block;
@@ -202,10 +202,10 @@ header{
     background-color: #aadcec;   
 }
 
-.img3{
+/* .img3{
     height: fit-content;
-    /* width: 592px;*/
-}
+    width: 592px;
+} */
 
 .skills h2{
     font-family: "Mosk Ultra-Bold 900";
@@ -284,10 +284,10 @@ header{
     width: 40%;
 }
 
-.img4{
-    /* width: 592px; */
+/* .img4{
+    width: 592px;
     height: fit-content;
-}
+} */
 
 .titulo-work h3{
     font-family: "Mosk Ultra-Bold 900";
@@ -383,9 +383,9 @@ header{
     padding: 80px 80px 20px 80px; 
 }
 
-.img5{
+/* .img5{
     height: fit-content;
-}
+} */
 
 .titulo-contact{
     width: 30%;
