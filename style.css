@@ -783,7 +783,7 @@ footer{
         text-align: center;
         top: 0px;
         padding-top: 35px;
-        padding-left: calc(1rem + (8 - 1) * ((100vw - 20rem)/ (100 - 20)));
+        padding-left: calc(1rem + (8 - 1) * ((100vw - 30rem)/ (100 - 20)));
         padding-right: calc(1rem + (8 - 1) * ((100vw - 20rem)/ (100 - 20)));
     }
 
@@ -798,7 +798,7 @@ footer{
     .aboutme h2{
         font-size: 40px;
         line-height: 47px;
-        padding: 68px;
+        padding: 60px;
     }
 
     .img2{
