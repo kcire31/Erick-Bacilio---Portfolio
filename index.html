@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="js" lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,14 +8,24 @@
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" type="text/css" href="flexbox.css">
         <link rel="shortcut icon" href="Images/logo2.png">
+        <script src="main.js" defer></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function(event) { 
+             var scrollpos = localStorage.getItem('scrollpos');
+             if (scrollpos) window.scrollTo(0, scrollpos);
+            });
+
+            window.onbeforeunload = function(e) {
+             localStorage.setItem('scrollpos', window.scrollY);
+            };
+        </script>
     </head>
     <body>
-        <header>
+        <header class="headerbg">
             <div class="header" id="header">
                 <div class="logo-menu">
                     <h1><img id="logo" src="Images/Erick2.0.gif" alt="Erick logo"></h1>
-                    <a href="index.html">Menu</a> 
-                    <!-- en menu href se va a cambiar -->
+                    <a class="button">Menu</a> 
                 </div>
                 
                 <nav class="nav-header-list">
@@ -30,6 +40,28 @@
                 </nav>
             </div>
 
+            <div class="menu">
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <a class="ctm" href="home.html">Home</a>
+                        <span class="span">Back to the home page.</span>
+                    </li>
+                    <li class="menu-item">
+                        <a class="ctm" href="contact.html">Work</a>
+                        <span class="span">Projects I've done.</span>
+                    </li>
+                    <li class="menu-item">
+                        <a class="ctm" href="contact.html">About me</a>
+                        <span class="span">A little about me and my background.</span>
+                    </li>
+                    <li class="menu-item">
+                        <a class="ctm" href="contact.html">Blog</a>
+                        <span class="span">My latest writings.</span>
+                    </li>
+                </ul>
+                 <img class="img6" src="Images/presentation.png">
+            </div>
+
             <div class="img-presentation">
                 <div class="container-img1">
                     <img class="img1" src="Images/presentation.png">
@@ -40,38 +72,7 @@
                 </section>
 
             </div>
-            
-            <!-- <div class="menu">
-                <h1><img id="logo" src="logo/logo2.0.png" alt="Erick logo"></h1>
-                <nav>
-                    <ul>
-                        <li><a href="home.html">Close</a></li>
-                        <li><a href="contact.html">ebaciliodlc@gmail.com</a></li>
-                        <li><a href="contact.html">Resume</a></li>
-                    </ul>
-                </nav>
-                <div>
-                    <ul>
-                        <li>
-                            <a href="home.html">Home</a>
-                            <span>Back to the home page.</span>
-                        </li>
-                        <li>
-                            <a href="contact.html">Work</a>
-                            <span>Projects I've done.</span>
-                        </li>
-                        <li>
-                            <a href="contact.html">About me</a>
-                            <span>A little about me and my background.</span>
-                        </li>
-                        <li>
-                            <a href="contact.html">Blog</a>
-                            <span>My latest writings.</span>
-                        </li>
-                    </ul>
-                </div>
-            </div> -->
-        </header>    
+        </header> 
 
         <main>
             <section id="aboutme" class="aboutme">
@@ -81,7 +82,6 @@
                     <div class="container-img2">
                         <img class="img2" src="Images/aboutme.png">
                     </div>
-                    <!-- <img class="img2" src="Images/aboutme.png"> -->
                 </div>
                 <a href="">Get to know me better!</a>
                 <!-- aqui href se va a cambiar -->
@@ -92,7 +92,6 @@
                     <div class="container-img3">
                         <img class="img3" src="Images/skills.png">
                     </div>
-                    <!-- <img class="img3" src="Images/skills.png"> -->
                     <section class="skill-container">
                         <section class="titulo-skill">
                             <h3>Skills I learned and I am using to bring imaginary ideas to real life</h3>
@@ -173,7 +172,6 @@
                     <div class="container-img4">
                         <img class="img4" src="Images/work.png">
                     </div>
-                    <!-- <img class="img4" src="Images/work.png"> -->
                 </section>
                 <a class="see" href="">See more!</a>
                 <!-- aqui href se va a cambiar -->
@@ -184,7 +182,6 @@
                     <div class="container-img5">
                         <img class="img5" src="Images/contact.png">
                     </div>
-                    <!-- <img class="img5" src="Images/contact.png"> -->
                     <section class="titulo-contact">
                         <h3>Let's get in touch</h3>
                         <p>Dropping a line to say good day, ask for my resume, ask for more specific information or see if we can build something amazing together? I'd love to hear from you!<br><br>Fill in your info in the form below and I look forward to hearing from you!</p>

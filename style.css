@@ -21,6 +21,13 @@ html{
     scroll-behavior: smooth;
 }
 
+.js.open{
+    overflow: hidden;
+    ::-webkit-scrollbar-thumb{
+        background-color: transparent;
+    } 
+}
+
 ::selection{
     background: rgb(107, 23, 230);
     color: white;
@@ -40,7 +47,7 @@ html{
 }
 
 /* MENU  */
-header{
+.headerbg{
     background: linear-gradient(to right,
     #f6f4f6 0%,
     rgba(246, 244, 246) 32%,
@@ -48,6 +55,85 @@ header{
     hsl(164, 61%, 65%) 100%);
     height: 100vh;
 }
+
+        /*MENU 2.0*/
+.headerbg.open{
+    position: fixed;
+    width: 99.4vw;
+    background: #f6f4f6;
+    z-index: 8;
+    .menu{
+        z-index: 4;
+        position: relative;
+        margin-bottom: 5000px;
+    }
+
+    .menu-item a{
+        animation: mover 2s 1;
+        animation-fill-mode: forwards;
+    } 
+
+    .img6{
+        animation: mover 1.3s 1;
+        animation-fill-mode: forwards;
+        animation-direction: reverse;
+    }
+}
+
+.menu{
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    width: 85%;
+    z-index: -1; 
+}
+
+.img6{
+    width: 592px;
+    height: 450px;
+}
+
+.menu-item{
+    margin-top: 70px;
+}
+
+@keyframes mover{
+    from{
+        transform: translateX(-100px);
+    }
+    to{
+        transform: translateX(20px);
+    }
+}
+
+.menu-item a{
+    font-family: "Mosk Ultra-Bold 900";
+    font-size: 68px;
+    font-weight: 700;
+    line-height: 69.5px;
+    color: rgb(64, 64, 64);
+    text-decoration: none;
+    width: 550px;
+}
+
+.menu-item a:hover{
+    text-decoration: dashed underline;
+    text-underline-offset: 10px;
+    color: rgb(107, 23, 230);
+}
+
+.menu-item:hover span{
+    color: rgb(107, 23, 230);
+}
+
+.menu-item span{
+    font-family: "Mosk Bold 700";
+    font-size: 17.725px;
+    line-height: 22px;
+    color: rgb(64, 64, 64);
+}
+
+        /* END MENU 2.0*/
 
 .header{
     margin: 0px 200px 50px 100px;
@@ -57,9 +143,17 @@ header{
     color: rgb(64, 64, 64);
 }
 
+.img-presentation{
+    position: relative;
+}
+
 .logo-menu, .header-list{
     margin-top: 50px;
     width: 500px;
+}
+
+.header-list.open{
+    display: none;
 }
 
 .resume{
@@ -85,7 +179,13 @@ header{
     color:rgb(64, 64, 64);
     text-decoration: none;
     transition: all cubic-bezier(0.1, 0, 0, 1) 1.5s;
+    cursor: pointer;
 }
+
+.button{
+    padding: 20px 20px 20px 0px;
+}
+
 
 .logo-menu a:hover, .navlist:hover{
     text-decoration: dashed underline;
@@ -600,7 +700,7 @@ footer{
         padding-bottom: calc(7.5rem + (10 - 7.5) * ((100vw - 20rem)/ (100 - 20)));
     }
 
-    header{
+    .headerbg{
         background: #f6f4f6;
     }
 
@@ -624,12 +724,39 @@ footer{
     .nav-header-list{
         /* padding-left: 10px; */
         position: fixed;
-        z-index: 1;
+        z-index: 5;
         bottom: 0px;
         background: #f6f4f6;
         border-top: solid 2px #404040;
         width: 100%; /*100% poner */
     }
+    
+    /* MENU 2.0*/
+    .headerbg.open{
+        height: auto;
+        padding-bottom: calc(7.5rem + (10 - 7.5) * ((100vw - 20rem)/ (100 - 20)));
+    }
+
+    .img6{
+        display: none;
+    }
+
+    .menu-item{
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    .menu-item a{
+        width: auto;
+    }
+
+    .menu-item span{
+        padding-left: 35px;
+    }
+
+    /* .menu{
+
+    } */
 
     /* PRESENTATION */
     .img1{
@@ -640,6 +767,14 @@ footer{
     .presentation{
         font-size: 40px;
         line-height: 47px;
+    }
+
+    .presentation a span{ 
+        -webkit-text-fill-color: red;
+    }
+
+    .presentation a{ 
+        -webkit-text-fill-color: white;
     }
 
     .presentation h1{

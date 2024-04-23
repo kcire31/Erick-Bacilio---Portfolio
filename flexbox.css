@@ -1,5 +1,19 @@
-
 /* MENU */
+
+        /*MENU 2.0*/
+.menu{
+    display: flex;
+    gap: 150px;
+}
+
+.menu-item{
+    display: flex;
+    align-items: center;
+}
+
+        /* END MENU 2.0*/
+
+        
 .header{
     display: flex;
     justify-content:space-between;
@@ -121,6 +135,17 @@
     .header-list{
         justify-content: space-around;
         gap: 15px;
+    }
+
+    /*MENU 2.0*/
+    .menu{
+        display: block;
+    }
+
+    .menu-item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     /* PRESENTATION */
