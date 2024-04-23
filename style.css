@@ -748,6 +748,8 @@ footer{
 
     .menu-item a{
         width: auto;
+        font-size: 50px;
+        line-height: 52px;
     }
 
     .menu-item span{
