@@ -695,7 +695,7 @@ footer{
 @media screen and (max-width:1030px){
 
     /* MENU */
-    header{
+    .headerbg{
         height: auto;
         padding-bottom: calc(7.5rem + (10 - 7.5) * ((100vw - 20rem)/ (100 - 20)));
     }
